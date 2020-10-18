@@ -1,0 +1,37 @@
+Task 1									
+What product category is the most popular among all stores? What product category is the least popular among all stores? (Hint: Make a graph!)									
+									
+Task 2									
+Is there any store with unusually high or low return rates? 
+
+Return rate is defined as total return dollars / total gross sales dollars. You need to base your response on the data. Once you find this out, based on your intuition, suggest what could be done to lower return rates!
+
+1. Find return dollars
+	(item_was_refuned * Unit Price) 
+2. return rate
+	return dollars / gross sales???
+
+	why not use item_Refunded/qty
+
+									
+For each store (Store1, Store2, Store3, Store4, Store5, Store6, and Store7), you need to calculate the total return dollars, the total gross sale dollars, and the return rate. (Make sure the currency is converted to Curr1!)									
+									
+									
+Task 3									
+Which store has the highest percentage of new customers? Which has the least?  You need to base your response on the data. Your response must also include your data evidence! From your own research, suggest how these stores can improve customer return rates.									
+							
+Remember: new customer means Returning_Customer = 0. Maybe you should create a Pivot Table!						
+	may have to write a measure count or if (return = 1) /count(ordernum or anything just need count) 
+
+			
+									
+Task 4									
+What is the average order value? What is the median order value? What is more indicative of customer behavior: average or median? Why?									
+You'll need to SUM the gross sales (in  USD) for each unique Order_ID. 					
+
+	
+
+
+
+Task 5									
+From the tasks, overall what suggestions do your team have to position Off-Black better in the marketplace? 									
