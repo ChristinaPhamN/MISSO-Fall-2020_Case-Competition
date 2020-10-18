@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    line-height: inherit;
+}
+
+h1 {
+    font-size: 1.75em;
+    line-height: 50px;
+    color: #e71d36;
+}
+
+h2 {
+    color: #353535;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    color: #e71d36;
+}
+
+h3 {
+    font-size: 1.25em;
+    margin-bottom: 0;
+}
+
+p {
+    color: #49505B;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 40px;
+}
+
+/*
+
+
+*/
+
+
+/*
+table
+*/
+
+
+.newTable table {
+    border-collapse: collapse;
+    border: 1px solid gray ;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px #DDE0E4;
+    
+}

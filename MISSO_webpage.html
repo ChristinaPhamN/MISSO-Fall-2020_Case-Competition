@@ -2,6 +2,16 @@
 <head>
     <title>MISSO Case Comp Part 2</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .circle-red {
+            height: 25px;
+            width: 25px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            }
+    </style>
 </head>
 
 <body>
@@ -62,7 +72,10 @@
         </div>
     </div>
 
-    <!--- code for grocery list--->
+
+
+    <!--- Start--->
+    <!-- Complete-->
     <div class="groceryList">
         <div class="container">
             <h3>Check out this list i came up with for an incoming grocery store run! Although I could have sworn I wrote something in thats not meant to be in this list, if only it could be bolded to my attention...</h3>
@@ -81,9 +94,20 @@
     <div class="checkers">
         <div class="container">
             <h3>Son, set up the Checkers board for me will ya? I got the table set up, now we just need the pieces... Preferably the red and black pieces. :)</h3>
+
+            <span class="cicle-red"></span>
+            <table cellpadding="10" border="1">
+                
+                <tr>
+                    <td bgcolor="black"><span class="cicle-red"></span></td>
+                    <td bgcolor="white"><span class="cicle-red"></span></td>
+                </tr>
+
+            </table>
         </div>
     </div>
 
+    <!-- Complete-->
     <div class="basketball">
         <div class="container">
             <h3>Did you see this Luka Doncic buzzer beater against the clippers? My god... thats some basketball right there. Although whenever i try to click on this link, it takes me straight to the page, I dont want that.. I want it to open in a new window because im still on this misso webpage... uh Junior you got this html code?</h3>
@@ -91,7 +115,7 @@
         </div>
     </div>
 
-    <!-- IDK what to do there -->
+    <!-- Complete-->
     <div class="quiz">
         <div class="container">
             <h3>What movie just got released to Disney + and is about a Chinese Girl turned Warrior? Super Inspiring stuff there... Im Drawing a Blank... uhhh Cinderella? Check (in html) the right answer please.</h3>
@@ -100,7 +124,7 @@
                 <label for = "Cinderella"> Cinderella </label> <br>
                 <input type = "radio" name = "princess" id = "Rapunzel">
                 <label for = "Rapunzel"> Rapunzel </label> <br>
-                <input type = "radio" name = "princess" id = "Mulan">
+                <input type = "radio" name = "princess" id = "Mulan" checked="checked">
                 <label for = "Mulan"> Mulan </label> <br>
                 <input type = "radio" name = "princess" id = "Elsa">
                 <label for = "Elsa"> Elsa </label> <br>
@@ -108,9 +132,19 @@
         </div>
     </div>
 
+    <!-- Complete-->
     <div class="text">
         <div class="container">
             <h3>Can I see how you develop a form with text inputs Junior? Please write a form (in html) that takes into account the user's first and last name, and their Major Classification. A text input is preferable.</h3>
+
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="major">Major:</label><br>
+                <input type="text" id="major" name="major">
+            </form>
         </div>
     </div>
 
@@ -141,24 +175,68 @@
         </div>
     </div>
 
+    <!-- Complete-->
     <div class="alignmentWants">
         <div class="container">
-            <h3>I dont want to be left or right anymore. I want to be centered. Can you make that happen, Junior?</h3>
+            <center><h3>I dont want to be left or right anymore. I want to be centered. Can you make that happen, Junior?</h3></center>
         </div>
     </div>
 
+    <!-- Complete-->
     <div class="newTable">
         <div class="container">
             <h3>Create a table that shows this:</h3>
             <p>Reference table below</p>
             <img src = "https://secureservercdn.net/166.62.107.20/3gt.381.myftpupload.com/wp-content/uploads/2020/10/pict2102.jpg" height = "200">
+
+            <table border="1">
+                <tr>
+                    <td colspan="2">Modern Artist</td>
+                    <td colspan="2">Classic Artists</td>
+                </tr>
+                <tr>
+                    <td>Kanye</td>
+                    <td>Post Malone</td>
+                    <td>Queen</td>
+                    <td>Fleetwood Mac</td>
+                </tr>
+                <tr>
+                    <td>Touch the Sky</td>
+                    <td>Under Pressure</td>
+                    <td>Sunflower</td>
+                    <td>Dreams</td>
+                </tr>
+            </table>
+            
+            <table>
+                <tr>
+                    <td colspan="3"><center><b>Mario Games</b></center></td>
+                </tr>
+                <tr>
+                    <td>Mario Sunshine</td>
+                    <td>Mario Party</td>
+                    <td>Super Mario Bros</td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td colspan="4"><center><b>Movies</b></center></td>
+                </tr>
+                <tr>
+                    <td>Inception</td>
+                    <td>Dark Knight</td>
+                    <td>Interstellar</td>
+                    <td>The Prestige</td>
+                </tr>
+            </table>
         </div>
     </div>
 
     <div class="cow">
         <div class="container">
             <h3>Why is there a cow standing on snow?!?! It should be standing on grass.</h3>
-            <img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ2B0ekyFrbXKWXAHJ_VIdstHFXwFF1ShodYw&usqp=CAU'>
+            <img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ2B0ekyFrbXKWXAHJ_VIdstHFXwFF1ShodYw&usqp=CAU' bgcolor="green>
         </div>
     </div>
 
