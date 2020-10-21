@@ -47,7 +47,7 @@ Header
 */
 
 .header {
-    background: url("/MISSO-Fall-2020_Case-Competition/Homepage_Assets/MISSO\ Homepage.png") center no-repeat;
+    background: url("\Homepage_Assets/Header.png") center no-repeat;
     background-position: top;
     background-size: cover;
     height: 110vh;
