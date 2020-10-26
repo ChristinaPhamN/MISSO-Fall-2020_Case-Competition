@@ -1,0 +1,55 @@
+
+
+'Report Multiplcation of non-zero values
+
+        For Each c In Worksheets(EIN).Range("D10:E17").Cells
+            If (c.Value <> 0 And c.Value <> "") Then
+                temp = c.Value
+                temp2 = temp * ownershipNum
+                c.Value = temp2
+            End If
+        Next
+
+
+
+
+Worksheets("Template").Copy After:=Worksheets(EINPrevious)
+
+
+
+10/21/2020 - 10:17am
+
+Dim i As Integer
+    ' change To # value for test, should be lastRow
+    For i = 3 To 5
+        
+        ' set variables
+        EIN = Range("F" & i).Value
+        ownershipNum = Range("G3")
+        SHName = Range("B3")
+        MsgBox "Loop " & i
+        MsgBox "EIN " & EIN
+        
+        ' create new sheet
+        Worksheets("Template").Copy After:=Worksheets(EINPrevious)
+        EINPrevious = EIN
+
+        
+        ActiveSheet.Name = EIN
+        
+        
+        Cells(1, 2).Value = EIN
+        Cells(2, 2).Value = SHName
+        
+        
+        ' the EIN range increment isn't working
+        
+        
+    Next i
+
+
+
+oh yeah, I am having issues with the copy "template" sheet. 
+I have the base code to produce the report; when I added the worksheet("Template").Copy function, my variable for that shareholder (SH name, EIN, Ownership %) isn't the next loop. 
+
+In a test I removed the copy statement is displayed the the values getting loop and it work. Only when I put the copy function back, it doesn't work. 

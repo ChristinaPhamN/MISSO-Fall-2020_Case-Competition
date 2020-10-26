@@ -1,0 +1,335 @@
+* {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    line-height: inherit;
+}
+
+h1 {
+    font-size: 1.75em;
+    line-height: 50px;
+    color: #ffffff;
+}
+
+h2 {
+    color: #353535;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 1.25em;
+    margin-bottom: 0;
+}
+
+p {
+    color: #49505B;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+
+.container {
+    width: 75%;
+    margin: auto;
+    padding: 75px;
+}
+
+
+
+
+/*
+Header
+*/
+
+.header {
+    background: url("\Homepage_Assets/Header.png") center no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 110vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.header h1 {
+    color: #ffffff;
+    font-size: 10em;
+
+    align-items: center;
+    text-align: center;
+    font-weight: 800;
+
+
+}
+
+
+
+
+/*
+Instruction
+*/
+
+.instruction {
+
+}
+
+.instruction h3, .instruction p {
+    text-align: center;
+}
+
+
+/*
+Example
+*/
+
+.example {
+    background: #F9F9F9;
+    text-align: center;
+}
+
+.example table{
+
+}
+
+
+
+
+
+
+
+
+
+
+/*
+Good Luck
+*/
+
+.goodLuck {
+    background: #1C4AAC;
+}
+
+.goodLuck h3 {
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+/*
+GroceryList
+*/
+
+.groceryList {
+    background: #FF6926;
+}
+
+.groceryList h3, li {
+    color: #ffffff;
+}
+
+.groceryList-row {
+    display: flex;
+    align-items: center;
+}
+
+.groceryList-right {
+    flex-basis: 55%;
+    padding-right: 20px;
+}
+.groceryList-left {
+    flex-basis: 40%;
+}
+
+
+/*
+Checkers
+*/
+
+
+.checkers-row {
+    display: flex;
+    align-items: center;
+}
+
+.checkers-left {
+    flex-basis: 55%;
+    padding-right: 20px;
+}
+.checkers-right {
+    flex-basis: 40%;
+}
+
+/*
+Basketball
+*/
+
+.basketball {
+    background: #F9F9F9;
+    text-align: center;
+}
+
+.basketball h3 {
+    padding-bottom: 20px;
+}
+
+.basketball a {
+
+}
+
+/*
+Quiz
+*/
+
+.quiz h3 {
+    padding-bottom: 20px;
+}
+
+
+
+
+/*
+Text
+*/
+
+.text {
+    background-image: linear-gradient(#496FBC, #2E4E8F);
+    color: #ffffff;
+
+}
+
+.text h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+.text input[type=text] {
+    width: 100%;
+    padding: 7px 20px;
+}
+
+.text table {
+    cellpadding: 5px;
+}
+.text td {
+    padding: 5px;
+}
+
+
+
+
+
+/*
+Images
+*/
+
+.images h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+/*
+staples
+*/
+
+.staples {
+    background: #1C4AAC;
+    color: #ffffff;
+}
+
+.staples button, .text input[type=button] {
+    background: #FF6926;
+    padding: 10px 32px;
+    color: #ffffff;
+    border-radius: 20px;
+    border: 0;
+
+    margin: 10px 0px;    
+}
+
+/*
+AlignmentWants
+*/
+
+
+/*
+NewTable
+*/
+
+.newTable {
+    background: #F9F9F9;
+    text-align: center;
+}
+
+
+/*
+Cow
+*/
+
+.cow {
+    background: #6D9E64;
+    text-align: center;
+    color: #ffffff;
+}
+
+.cow h3 {
+    padding-bottom: 20px;
+}
+
+/*
+Dinner
+*/
+ 
+.dinner h3 {
+    padding-bottom: 20px;
+}
+
+/*
+Footer
+*/
+
+.footer {
+    background: #0C182F;
+    color: #ffffff;
+    padding: 20px 0px;
+}
+
+
+.footer-row {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    flex-basis: 65%;
+}
+
+
+.footer-right {
+    flex-basis: 30%;
+    padding-right: 20px;
+    
+}
+
+
+.footer h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer table {
+        
+}

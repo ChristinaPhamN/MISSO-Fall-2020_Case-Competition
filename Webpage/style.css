@@ -51,14 +51,19 @@ Header
     background-position: top;
     background-size: cover;
     height: 110vh;
+
+    display: flex;
+    align-items: center;
 }
 
 .header h1 {
     color: #ffffff;
-    font-size: 5em;
+    font-size: 10em;
 
     align-items: center;
     text-align: center;
+    font-weight: 800;
+
 
 }
 
@@ -204,6 +209,20 @@ Text
 
 
 
+.text input[type=text] {
+    width: 100%;
+    padding: 7px 20px;
+}
+
+.text table {
+    cellpadding: 5px;
+}
+.text td {
+    padding: 5px;
+}
+
+
+
 
 
 /*
@@ -226,12 +245,14 @@ staples
     color: #ffffff;
 }
 
-.staples button {
+.staples button, .text input[type=button] {
     background: #FF6926;
     padding: 10px 32px;
     color: #ffffff;
     border-radius: 20px;
     border: 0;
+
+    margin: 10px 0px;    
 }
 
 /*
@@ -288,18 +309,20 @@ Footer
 }
 
 .footer-logo {
-    flex-basis: 40%;
+    flex-basis: 65%;
 }
 
 
 .footer-right {
-    flex-basis: 55%;
+    flex-basis: 30%;
     padding-right: 20px;
+    
 }
 
 
 .footer h1 {
     font-size: 4em;
+    text-align: center;
 }
 
 .footer a {
