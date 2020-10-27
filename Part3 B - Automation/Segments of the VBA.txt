@@ -53,3 +53,78 @@ oh yeah, I am having issues with the copy "template" sheet.
 I have the base code to produce the report; when I added the worksheet("Template").Copy function, my variable for that shareholder (SH name, EIN, Ownership %) isn't the next loop. 
 
 In a test I removed the copy statement is displayed the the values getting loop and it work. Only when I put the copy function back, it doesn't work. 
+
+
+
+
+
+COMPLETE
+
+
+Sub OffBlack_ShareholderReport()
+'
+' OffBlack_ShareholderReport Macro
+' Produce Off Black shareholder report
+'
+
+    ' Variables
+    EINPrevious = "Reports for SH"
+    Dim lastRow As Long
+    
+    Dim EIN As String
+    Dim ownershipNum As Double
+    Dim SHName As String
+    
+    Sheet1.Activate
+    
+    ' Last row of shareholders
+    lastRow = Cells(Rows.Count, 1).End(xlUp).Row
+
+    
+        
+    ' Report
+    ' Loop through all the shareholders
+    For i = 7 To 8
+        
+        Sheet1.Activate
+        
+        ' set shareholder variables
+        EIN = Range("F" & i).Value
+        ownershipNum = Range("G" & i).Value
+        SHName = Range("B" & i).Value
+                
+        ' Copy Template sheet and move it behind the previous one
+        Worksheets("Reports for SH").Copy After:=Worksheets(EINPrevious)
+        
+        ' Rename Sheet to EIN
+        ActiveSheet.Name = EIN
+        
+        ' Write Shareholder name and EIN in the sheet
+        Cells(1, 2).Value = SHName
+        Cells(2, 2).Value = EIN
+        
+        ' Update the previous sheet
+        EINPrevious = EIN
+        
+        
+        ' Loop through all the report values
+        For Each c In Worksheets(EIN).Range("D9:I100").Cells
+            If (c.Value <> 0 And c.Value <> "") Then
+                temp = c.Value
+                temp2 = temp * ownershipNum
+                c.Value = temp2
+            End If
+        Next
+        
+        
+    Next i
+        
+    
+    
+    
+    MsgBox "END"
+
+
+
+
+End Sub
