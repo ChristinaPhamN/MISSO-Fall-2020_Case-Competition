@@ -47,7 +47,7 @@ Header
 */
 
 .header {
-    background: url("\Homepage_Assets/Header.png") center no-repeat;
+    background: url("https://raw.githubusercontent.com/ChristinaPhamN/MISSO_Case-Competition/main/Homepage_Assets/Header.png") center no-repeat;
     background-position: top;
     background-size: cover;
     height: 110vh;
